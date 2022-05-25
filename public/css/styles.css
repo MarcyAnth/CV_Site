@@ -1,0 +1,271 @@
+
+body{
+  font-family: 'Akshar', sans-serif;
+}
+
+.navbar-custom{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  background-color: #1f261f;
+
+  font-size: 1.5rem;
+
+
+}
+
+.nav-link {
+  color: #E9EFC0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2em;
+}
+
+.nav-link:hover{
+  color: black;
+}
+
+
+
+/* section1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+.section1 {
+  height: 90vh;
+  background: url("../images/entrance.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  z-index: -1
+
+}
+
+.text{
+    position: absolute;
+    color: #E9EFC0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 4px solid  #E9EFC0;
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Inconsolata', monospace;
+}
+
+.animation{
+  animation: typewriter 3s steps(25) 1s 1 normal both,
+             blinkCursor 500ms steps(15) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width:880px;
+  }
+}
+
+@keyframes blinkCursor{
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.container-home{
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 30%;
+  border: solid 5px;
+  border-color: #E9EFC0;
+
+  padding-bottom: 5rem;
+
+}
+
+.column-button{
+  margin-top: 10rem;
+
+}
+
+.btn-dark{
+  color: #E9EFC0;
+  width: 300px;
+
+}
+
+.container-text{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.fa-b{
+  color: #E9EFC0;
+}
+
+
+.section1portfolio {
+  height: 90vh;
+  background-color:  #E9EFC0;
+  overflow: hidden;
+
+}
+
+
+.container-portfolio {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+
+}
+
+
+
+  .container-portfolio img{
+  border: solid 2px black;
+
+}
+
+.container-portfolio img:hover{
+  border: solid 10px black;
+
+  -webkit-filter: grayscale(50%);
+  transition: filter 0.5s ease-in-out;
+
+}
+
+.ptext{
+  text-align: center;
+  align-items:center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 1rem;
+
+}
+
+body {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.horizontal{
+  position: relative;
+  justify-content: center;
+  width: 70%;
+  left: 15%;
+  right: 15%;
+  color: black;
+}
+
+.container-logos {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  color:#1f261f;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px){
+  .text{
+    top: 40%;
+    left: 50%;
+    font-size: 1rem;
+    height: 50vh;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 450px;
+    }
+  }
+
+  @keyframes blinkCursor{
+    from {
+      border-right-color: black;
+      height: 20px;
+    }
+    to {
+      border-right-color: transparent;
+      height: 20px;
+    }
+  }
+
+  .btn-dark{
+    color: #E9EFC0;
+    width: 100px;
+    font-size: 1em;
+
+
+  }
+
+}
+
+@media only screen and (max-width: 800px){
+
+.container-portfolio{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.section1portfolio {
+  height: auto;
+}
+
+.fa-icon{
+  height: 1em;
+}
+
+.nav-link{
+  color:black;
+}
+
+}
