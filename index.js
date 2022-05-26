@@ -5,6 +5,7 @@ const _ = require('lodash');
 
 
 const app = express();
+const port =  process.env.PORT || 3000
 
 
 app.set('view engine', 'ejs');
@@ -23,8 +24,10 @@ app.get("/portfolio",function(req,res){
   res.render("portfolio");
 });
 
-
-
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+app.get("/contact",function(req,res){
+  res.render("contact");
 });
+
+
+
+app.listen(port, () => console.log(`Listening on port ${port}`))
